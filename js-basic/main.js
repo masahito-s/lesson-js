@@ -131,10 +131,33 @@ function findTriangleArea(a,b) {
 const area = findTriangleArea(5,2);
 console.log(area);
 */
-//　無名関数　上の正方形のやつを書き換えてみる
-const add = function (x,y) {
+/*　無名関数　上の正方形のやつを書き換えてみる
+const add = function (x,y) { //無名関数を定義して、変数に代入する
     const sum = x + y;
     return sum;
 }
 const result = add(2,3);
 console.log(result);
+*/
+
+/* アロー関数
+const add = (x, y) => { // アロー関数を定義して、変数に代入する
+  const sum = x + y;
+  return sum;
+};
+
+const result = add(2, 3);
+console.log(result);
+
+　　//{}ブロックで囲まれたのが一文だけで戻り値を返すだけなら省略できる
+const add = (x, y) => x + y;
+
+const result = add(2, 3);
+console.log(result);
+
+　　//引数が1つだけの場合仮引数を囲む()も省略できる
+const double = x => x * 2;
+
+const result = double(5);
+console.log(result);
+*/
