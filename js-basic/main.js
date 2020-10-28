@@ -140,7 +140,7 @@ const result = add(2,3);
 console.log(result);
 */
 
-/* アロー関数
+　　　　　/* 4−7　アロー関数
 const add = (x, y) => { // アロー関数を定義して、変数に代入する
   const sum = x + y;
   return sum;
@@ -161,3 +161,119 @@ const double = x => x * 2;
 const result = double(5);
 console.log(result);
 */
+
+/*////　　function findTriangleArea(a,b) {
+    return a * b / 2;
+}
+const area = findTriangleArea(5,2);
+console.log(area);
+　//上の三角形の面積を求める、アロー関数に書き換える
+
+const add =(x,y) => {
+  const sum = x * y / 2;
+  return sum;
+};
+const result =add(5,2);
+console.log(result);
+
+const add = (x,y) => x * y /2;
+const result = add(5,2);
+console.log(result);　　////*/
+/*
+　　　　//　4-8　条件分岐
+　　//trueとelse
+if (10 > 3) {
+  console.log('yes');
+} else {
+  console.log('no');
+}
+    //変数に保存することもできる
+const result = 10 > 3;
+
+if(result) { //resultがtrueの場合に実行される
+  console.log('yes');
+} else { //resultがfalseの場合に実行される
+  console.log('no');  
+}
+　　//true と false は頭に ! を付けると反転できる
+const result = 10 < 3;
+
+if(!result) { //resultがfalseの場合に実行される
+  console.log('yes');
+} else {
+  console.log('no');
+}
+*/
+/*　　　　//　ANDとOR
+const num = 5;
+
+if (num >= 3) {
+  if (num < 7) {
+    console.log('ok');
+  }
+}
+　　　　//　下記のようにシンプルにできる　
+AND-&&
+const sum = 5;
+
+if (num >= 3 && num < 7) { //numが3以上かつ7未満の場合
+  console.log('ok');
+}
+OR-||
+const num = 1;
+
+if (num < 3 || num >= 7) { //numが３未満または７以上の場合
+  console.log('ok');
+}*/
+/*
+　　//ANDとORの組み合わせ
+　　
+const a = 5;
+const b = 20;
+
+if (a === 3 && b < 7 || b >= 15) { //変数aが3で、かつ変数bが7未満または15以上の場合に「yes」
+  console.log('yes'); 
+} else {
+  console.log('no');
+} //a は 5 なので、本来は「no」と表示されるはずなのにyesになる
+
+
+if ((a === 3 && b < 7) || b >= 15) { //&&は||より優先される
+
+　　//|| が先に実行されるように ( ) で囲う
+
+const a = 5;
+const b = 20;
+
+if (a === 3 && (b < 7 || b >= 15)) {
+  console.log('yes');
+} else {
+  console.log('no');
+}*/
+/*
+　　　　// truthyとfalsy
+const result = undefined;
+if (result) {
+  console.log('truthy');
+} else {
+  console.log('falsy');
+}*/
+
+　　　　//  else if
+　　　　
+　//・点数が80点以上なら「よくできました！」と表示する
+　//・点数が80点未満だが、60点以上なら「合格です」と表示する
+　//・60点未満であれば「もっとがんばりましょう」と表示する
+
+const score = 70;
+
+if (score >= 80) {
+  // scoreが８０以上の場合に実行される
+  console.log('よくできました！');
+} else if (score >= 60) {
+  // scoreが８０以上を満たさないが、scoreが６０以上の場合に実行される
+  console.log('合格です');
+} else {
+  // scoreが６０以上も満たさない場合に実行される
+  console.log('もっとがんばりましょう');
+}　　//scoreが７０以上にしているので、合格ですと表示される
