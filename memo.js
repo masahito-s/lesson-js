@@ -35,7 +35,20 @@ true || false	true
 false || true	true
 false || false	false
 
+　　//論理演算子
+https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Logical_Operators
 
+　　//truthyとfalsy
+　　これらはfalse
+・false
+・undefined
+・null
+・0
+・NaN
+・''　文字の入っていない文字列を表しています。このような文字列を、「空文字列」
+　上記以外はtrueとなる
+
+　　//
 
 
 
