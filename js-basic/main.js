@@ -277,3 +277,91 @@ if (score >= 80) {
   // scoreが６０以上も満たさない場合に実行される
   console.log('もっとがんばりましょう');
 }　　//scoreが７０以上にしているので、合格ですと表示される*/
+/*
+　　　//配列とループ
+//　配列を作成
+const numbers = [1,2,3,4,5,7,10];
+
+//　最初の要素を表示
+console.log(numbers[0]);
+*/
+/*
+　　//ループを使って配列の要素に1つずつアクセスする
+// 配列を作成
+const numbers = ['あ','い','う','え','お','か','き',];
+// 各要素を表示
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
+}
+*/
+/*
+　　//サンプルコードの変更（数値の合計を求める）
+// 配列を作成
+const numbers = [1,2,3,4,5,7,10];
+let total = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+  total += numbers[i];
+}
+console.log(`合計: ${total}`);
+*/
+/*
+// 上記の total += numbers[i];は、total = total + numbers[i]; に書き換えれる
+　　こうすると分かりやすい
+const numbers = [1,2,3,4,5,7,10];
+let total = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+  console.log(`${i + 1}回目のループ:小計 = ${total} + ${numbers[i]}`);
+  total += numbers[i];
+}
+console.log(`合計: ${total}`);
+*/
+/*
+　　//breakとcontinue
+for (let i = 1; i <= 50; i++) {
+  // iが２０より大きい場合はループ処理を強制終了
+  if (i > 20) {
+    break;
+  }
+  // iが奇数の場合はスキップ
+  if (i % 2 == 1) {
+    continue;
+  }
+  // 2つのifの条件がtrueでない(iが偶数)ならiの値を表示
+  console.log(i);
+}
+*/
+/*
+　　//4-9練習問題
+for (let i = 1; i <= 100; i++) {
+  //if (i % 3 == 0) 
+  if ((i % 3 ) == 0) {
+  console.log(Fizz)
+  }
+  //if (i % 5 == 0) 
+  if ((i % 5 ) == 0) {
+  console.log(Buzz)
+  }
+      console.log(i);
+}
+*/
+/*
+　　// 解答
+for (let i = 1; i <= 100; i++) {
+  if (i % 15 == 0) {
+    // ３の倍数かつ５の倍数=１５のとき
+    console.log('FizzBuzz');
+  }else if (i % 3 == 0) {
+  // ３の倍数のとき
+  console.log('Fizz');
+  }else if (i % 5 == 0) {
+  // ５の倍数のとき
+  console.log('Buzz');
+  }else {
+  // いずれも満たさないとき
+  console.log(i);
+  }
+}
+*/
+　　//4-10オブジェクト
